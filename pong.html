@@ -1,0 +1,208 @@
+<!-- GPT-3.5 V4 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pong Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #gameContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        canvas {
+            border:1px solid #d3d3d3;
+            background-color: #222;
+        }
+
+        /* Game over modal styles */
+        #gameOverModal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        #gameOverModalContent {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+            text-align: center;
+        }
+
+        #gameOverModalContent h2 {
+            margin-top: 0;
+        }
+
+        #gameOverButtons button {
+            margin: 10px;
+            padding: 10px;
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: serif;
+            font-size: 16px;
+        }
+
+        #gameOverButtons button:hover {
+            background-color: #000000;
+        }
+
+        header {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #title {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            /*text-shadow: 2px 2px #000;*/
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>Pong</header> -->
+    <div id="title"><p>Pong (GPT-3.5)</p></div>
+    <div id="gameContainer">
+        <canvas id="canvas" width="485" height="400"></canvas>
+    </div>
+    <!-- <button id="restartButton">Restart Game</button> -->
+    <div id="gameOverModal">
+        <div id="gameOverModalContent">
+            <h2>Game Over</h2>
+            <p>Your score: <span id="gameOverScore"></span></p>
+            <div id="gameOverButtons">
+                <button id="restartGame">Restart</button>
+                <button id="quitGame">Quit</button>
+            </div>
+        </div>
+    </div>
+    <script src="pong.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- GPT-3.5 V3 -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Pong Game</title>
+	<style>
+	canvas {
+		border:1px solid #d3d3d3;
+		background-color: #222;
+	}
+
+	/* Game over modal styles */
+	#gameOverModal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	#gameOverModalContent {
+		background-color: #fff;
+		margin: 15% auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 40%;
+		text-align: center;
+	}
+
+	#gameOverModalContent h2 {
+		margin-top: 0;
+	}
+
+	#gameOverButtons button {
+		margin: 10px;
+		padding: 10px;
+		background-color: #4CAF50;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	#gameOverButtons button:hover {
+		background-color: #3e8e41;
+	}
+</style>
+</head>
+<body>
+	<canvas id="canvas" width="405" height="400"></canvas>
+	<button id="restartButton">Restart Game</button>
+	<div id="gameOverModal">
+		<div id="gameOverModalContent">
+			<h2>Game Over</h2>
+			<p>Your score: <span id="gameOverScore"></span></p>
+			<div id="gameOverButtons">
+				<button id="restartGame">Restart Game</button>
+				<button id="quitGame">Quit Game</button>
+			</div>
+		</div>
+	</div>
+	<script src="pong.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!-- GPT-3.5 V1-2 -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Pong Game</title>
+    <style>
+        canvas {
+            border:1px solid #d3d3d3;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script src="pong.js"></script>
+</body>
+</html>
